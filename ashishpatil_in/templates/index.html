@@ -1,0 +1,62 @@
+{% load bootstrap3 %}
+{% load staticfiles %}
+<link rel="stylesheet" href="{{ STATIC_URL }}cover.css" />
+
+
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>{% block title %}Ashish Patil{% endblock %}</title>
+    {% block extrahead %}{% endblock %}
+</head>
+
+<body>
+
+  <div class="site-wrapper">
+
+    <div class="site-wrapper-inner">
+
+      <div class="cover-container">
+
+        <div class="masthead clearfix">
+          <div class="inner">
+            <h3 class="masthead-brand">Cover</h3>
+            <nav>
+              <ul class="nav masthead-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="/blog">Blog</a></li>
+                <li><a href="/resume">Resume</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+
+        <div class="inner cover">
+          <h1 class="cover-heading">Hi, I'm Ashish</h1>
+          <p class="lead">I'm currently a student at PESIT, Bangalore. If you need to contact me, email me: mail@ashishpatil.in. To know more about me, check out my <a hreg="/blog">blog!</a></p>
+          <p class="lead">
+            <a href="#" class="btn btn-lg btn-default">Learn more</a>
+          </p>
+        </div>
+
+        <div class="mastfoot">
+          <div class="inner">
+            <p>Facebook, twitter, quora icons here!</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+</body>
+</html>

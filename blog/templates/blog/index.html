@@ -1,0 +1,31 @@
+{% load bootstrap3 %}
+
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>{% block title %}Ashish's Blog{% endblock %}</title>
+    {% block extrahead %}{% endblock %}
+</head>
+
+<body>
+  <ul class="nav nav-tabs">
+    <li role="presentation" class="active"><a href="#">Home</a></li>
+    <li role="presentation"><a href="/resume/">Resume</a></li>
+    <li role="presentation"><a href="/projects.html">Projects</a></li>
+  </ul>
+
+  {% for post in posts %}
+  <div class = text-center>
+    <h3><a href="">{{ post.title }}<span class="label label-default text-center"></span></a></h3>
+      <h5> published: {{ post.created }} <span class="label label-default"></span></h5>
+      <span class="label label-primary"> {{ post.category }}</span>
+      <p>{{ post.body|linebreaks }}</p>
+  </div>
+  {% endfor %}
+</body>
+</html>

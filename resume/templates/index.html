@@ -1,0 +1,66 @@
+{% load bootstrap3 %}
+{% load staticfiles %}
+
+
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <link rel="stylesheet" type="text/css" href="{% static 'cover.css'%} " />
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}Ashish Patil{% endblock %}</title>
+</head>
+
+<body>
+
+  <div class="site-wrapper">
+
+    <div class="site-wrapper-inner">
+
+      <div class="cover-container">
+
+        <div class="masthead clearfix">
+          <div class="inner">
+            <h3 class="masthead-brand">Ashish Patil</h3>
+            <nav>
+              <ul class="nav masthead-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="/blog">Blog</a></li>
+                <li><a href="/resume">Resume</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+
+        <div class="inner cover">
+          <h1 class="cover-heading">Hi, I'm Ashish</h1>
+          <p class="lead">I'm currently a student at PESIT, Bangalore. If you need to contact me, email me: mail@ashishpatil.in. To know more about me, check out my <a hreg="/blog">blog!</a></p>
+
+        </div>
+
+        <div class="mastfoot">
+          <div class="inner">
+            <p>Facebook, twitter, quora icons here!</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+<script type="text/javascript" src="{% static 'js1.js' %}"></script>
+
+
+
+</body>
+</html>

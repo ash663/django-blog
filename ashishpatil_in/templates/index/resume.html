@@ -1,0 +1,30 @@
+{% load bootstrap3 %}
+
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>{% block title %}Ashish's Resume{% endblock %}</title>
+    {% block extrahead %}{% endblock %}
+</head>
+
+<body>
+  <ul class="nav nav-tabs">
+    <li role="presentation"><a href="/blog/">Home</a></li>
+    <li role="presentation class="active""><a href="#">Resume</a></li>
+    <li role="presentation"><a href="/projects">Projects</a></li>
+  </ul>
+
+
+  <div class = text-center>
+    <h3>Ashish Patil<span class="label label-default"></span></h3>
+      <h5> dob: 11/01/1995<span class="label label-default"></span></h5>
+      <span class="label label-primary"> CEO, SSDByte</span>
+
+  </div>
+</body>
+</html>
